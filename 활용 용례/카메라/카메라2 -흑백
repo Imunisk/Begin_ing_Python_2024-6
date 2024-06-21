@@ -32,3 +32,4 @@ cv2.destroyAllWindows()
 
 
 #      추가코드 :  a=cv2.cvtColor(a,cv2.COLOR_BGR2GRAY)
+#      활용 용례/파일 열기/(사진을 흑백으로)  에서  img를 a로 적으면 그대로 적용된다.
