@@ -14,6 +14,7 @@ if cap.isOpened():
 
         # 이미지를 보여주는 방식과 같습니다.
         ret, a = cap.read()
+        # 이미지가 흑백이 됩니다.
         a=cv2.cvtColor(a,cv2.COLOR_BGR2GRAY)
 
         '''
