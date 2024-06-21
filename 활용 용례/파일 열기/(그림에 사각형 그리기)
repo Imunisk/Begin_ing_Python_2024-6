@@ -1,0 +1,15 @@
+import cv2
+
+img=cv2.imread('D:/img/img/18.jpg',1)
+
+img=cv2.rectangle(img,(0,50),(100,100),(0,0,0),2)
+
+
+cv2.imshow('imsi',img)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+//  (0,50),(100,100),(0,0,0),2
+//  사각형 왼쪽위 좌표/ 오른아래 좌표/ 선의 RGB컬러/ 선의 두께
