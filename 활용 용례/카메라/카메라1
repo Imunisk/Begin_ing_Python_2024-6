@@ -26,3 +26,6 @@ if cap.isOpened():
  
 cap.release()
 cv2.destroyAllWindows()
+
+
+#  활동사진 개념을 생각해보기. 스크린샷 여러장을 이어서 영상으로 보여주는 것임.
