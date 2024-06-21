@@ -1,0 +1,10 @@
+import cv2
+
+// '/로 입력'
+// 이 주소의 이 파일 열기
+// imsi는 임시 타이틀
+img=cv2.imread('D:/img/img/12.jpg')
+cv2.imshow('imsi',img)
+
+//0을 입력시 창 닫기
+cv2.waitKey(0)
