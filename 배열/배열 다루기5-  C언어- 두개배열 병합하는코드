@@ -22,10 +22,17 @@ int main(){
    }
    
    //합친 결과 출력
-   printf("");
+   printf("Merged Array: ");
    for (int k=0;k<6;k++) {
       printf("%d",mergedArr[k]);
    }
 
    return 0;
 }
+
+
+// 파이썬에서- 두개배열 병합하는코드
+// 단 두줄로 완성된다.
+arr1 = (1,2,3)
+arr2 = (4,5,6)
+print(arr1 + arr2)
