@@ -1,0 +1,74 @@
+#001 Return값의 용례
+
+def addNum(num1,num2):
+    print(num1+num2)
+    return (num1+num2)
+
+def mulf(word,times):
+    print(str(word)*int(times))
+
+
+mulf("Yes! ", addNum(1,1))
+
+
+#002
+
+def addNum(num1,num2):         #2개의 값 투입
+    print(num1+num2)
+    return num1+num2,num1,num2 #3개의 값 반환
+
+def mulf(word,times):
+    print(str(word)*int(times))
+
+print(addNum(1,1))                #3개 한번에 인출.
+a,b,c=addNum(1,2)                #3개 중 1개씩 쓰려고 함.
+
+mulf("Yes! ", a)
+
+
+#003  Return값, 여러 개 반환가능- 예시
+
+def addNum(num1,num2):         #2개의 값 투입
+return num1+num2,num1,num2 #3개의 값 반환
+
+def mulf(word,times):
+    print(str(word)*int(times))
+
+def Pirates(a,b,c):
+    print("YES "*a+" no "*b+" Aye-sir! "*c)
+
+
+a,b,c=addNum(1,2)   #반환값 만들어 변수에 저장
+print(a,b,c)
+
+mulf("Yes! ", a)        #저장한 변수값 활용하기1
+Pirates(a,b,c)           #저장한 변수값 활용하기2
+
+
+
+#004 사칙연산 함수 만들기
+
+def add(num1,num2):
+    return num1+num2
+def subtract(num1,num2):
+    return num1-num2
+def multiply(num1,num2):
+    return num1*num2
+def divide(num1,num2):
+    return num1/num2
+
+'''
+print("사칙연산을 해봅시다.")
+print("두 숫자를 입력해보세요. (예:40 엔터키,7 엔터키))
+a,b=int(input("입력된 숫자: "))
+print("a+b= "+add(a,b))
+'''
+
+
+print("Addition:", add(5,3))
+print("Subtraction:", subtract(5,3))
+print("Multiply:", multiply(5,3))
+print("Division:", round(divide(5,3),2))
+
+
+
