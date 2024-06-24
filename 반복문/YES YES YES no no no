@@ -1,0 +1,9 @@
+for i in range(1,4):
+    print("YES "*(4-i)+"no "*(4-i))
+
+'''
+출력결과 :
+YES YES YES no no no 
+YES YES no no 
+YES no 
+'''
