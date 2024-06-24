@@ -92,3 +92,15 @@ def 사각형의넓이(가로,세로):
 삼각형의넓이(2,3)
 사각형의넓이(2,3)
 
+
+
+#007 섭씨를 화씨로 바꾸는 함수
+
+def Fahrenheit(Cel):
+    num1=divide(9,5)
+    num2=multiply(num1,Cel)
+    num3=add(num2,32)
+    return num3
+
+print(9/5*30+32,"°F")
+print(Fahrenheit(30),"°F")   #섭씨30도는 86.0 °F
