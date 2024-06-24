@@ -1,0 +1,11 @@
+str_val = 'apples'
+num_val = 42
+
+print(f'{str_val=}, {num_val = }')   # str_val='apples', num_val = 42
+
+
+
+circle=['ball','wheel','donuts','ring','zero']
+pointy=['star','arrow','finger','thorn','leaf','hedgehog']
+
+print(f'{circle=}')     # circle=['ball','wheel','donuts','ring','zero']
