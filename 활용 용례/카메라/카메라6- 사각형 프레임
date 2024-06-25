@@ -16,11 +16,6 @@ if cap.isOpened():
         ret, a = cap.read()
         a=cv2.rectangle(a,(30,30),(610,450),(0,100,255),4)
 
-
-        '''
-        이곳에서 이미지 영상에 대한 처리를 한다.         
-        '''
-
         cv2.imshow("camera", a)
 
         if cv2.waitKey(1) & 0xFF == 27: # ESC key 아스키 값 , 종료 커맨드.
