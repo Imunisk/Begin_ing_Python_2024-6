@@ -1,0 +1,11 @@
+#this is a drill
+
+
+
+status= "상품 준비중"
+print("주문상태 : "+s tatus)
+status= "배송중"
+print("주문상태 : "+status)
+status= "배송 완료"
+print("주문상태 : "+status)
+
