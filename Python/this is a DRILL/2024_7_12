@@ -76,7 +76,7 @@ subway.extend(new_subway)
 print(subway)  #[3,2,1,0,0,1,2,3]
 
 
-#캐비닛   중괄호{}
+#딕셔너리   중괄호{}
 cabinet={"A-1": "Cat", "A-2": "Bear". "A-3": "Duck", "A-4": "Whale"}
 print(cabinet["A-1"])   #Cat
 
