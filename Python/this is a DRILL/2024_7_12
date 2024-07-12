@@ -76,12 +76,181 @@ subway.extend(new_subway)
 print(subway)  #[3,2,1,0,0,1,2,3]
 
 
-#딕셔너리   중괄호{}
+#딕셔너리   중괄호{:}
 cabinet={"A-1": "Cat", "A-2": "Bear". "A-3": "Duck", "A-4": "Whale"}
 print(cabinet["A-1"])   #Cat
 
 Cabi={"3":"Pooh", "100":"Piglet"}
 print(Cabi[3])   #Pooh
 print(Cabi.get(4))  #None
+
+
+# 세트 = 수학에서의 집합
+java= {"A","B","C"}
+python= set(["A", "D"])
+#교집합
+print(java&python)
+print(java.intersection(python))
+#합집합
+print(java|python)
+print(java.union(python))
+#차집합
+print(java-python)
+#요소 추가시킴
+python.add("B")
+#요소 제외시킴
+java.remove("B")
+
+# REview
+from random import *
+
+users=list(range(1,21))
+shuffle(users)
+winner= sample(users,4)
+
+print("---")
+print("Apple :{0}".format(winner[0]))
+print("Pear :{0{}".format(winner[1:]))
+
+#2nd
+from random import *
+users= list(range(1,21))
+shuffle(users)
+
+Apple=sample(users,1)
+remain_users= set(users)- set(Apple)
+Pear=sample(list(remain_users),3)
+print("---")
+print("Apple :{0}".format(Apple))
+prit("Pear :{0}".format(Pear))
+
+# [] {:} () {}  리스트 딕셔 튜플 세트
+
+
+
+#조건문
+
+level= "raining"
+
+if level=="raining":
+    print("It's raining")
+
+level="harsh"
+if level=="easy":
+    print("So easy")
+elif level=="harsh":
+    print("Oh Nein")
+else:
+    print("Errorr")
+
+
+Feel= input("How are you"?")
+
+if Feel=="Good":
+    print("Yes, Good")
+elif Feel=="No so good:":
+    print("Not so good..")
+elif Feel=="Bad":
+    print("so bad")
+else:
+    print("Errorr.")
+
+temp=int(input("How's the Celcius's Temp?")
+
+if 30<temp:
+    print("Hot.")
+elif 10<temp and temp<30:
+    print("Nice")
+elif 0<=temp and temp<10:
+    print("Take you coat on")
+else:
+    print("too cold")
+
+total =2
+if total<=4:
+    print("Expenses Overrated")
+else:
+    print("2 per 1")
+print("Danke Schoen")
+
+
+temp=40
+if temp>=39:
+    print("High Fever")
+elif temp>=38:
+    print("low")
+else:
+    print("Normal range")
+
+
+for wait in range(1,5):
+    print("Waiting No : {0}".foramt(wait))
+
+orders=["Dave","John:","Vince"]
+for i in orders:
+    print("Sir{0},
+ your coffee is ready.".format(i))
+
+
+customer="Thir"
+index=5
+
+while index>0:
+    print("{}, Come along now".format(customer))
+    index--
+    print("Chance is left for {}".format(index))
+    if (index==0):
+        print("This is spoiled obviously:")
+
+i=3
+while i<=5:
+    print(i)
+    i++
+
+
+#Taxi customer
+
+from random import *
+passenger=0
+
+for i in range(1,51):
+    time=int(rand()*45+5)
+    if 5<=time<=15:
+        print("[O] {0}번째 손님 (소요시간 : {1}분)"
+.format(i,time)
+    passengers++
+    else:
+        print("[  ] {0}번째 손님 (소요시간 : {1}분)"
+.format(i,time)
+
+
+print("총 탑승객: {}명".format(passengers))
+
+
+
+# 1+1행사. 3의 배수일때만 할인.
+
+item=input("몇 개를 담습니까: ")
+for i in range(item):
+    print("2+1상품입니다")
+    if(i%3==0):
+        discnt++
+print("총 가격은 {}000원입니다".format(item-discnt))
+
+
+#또는
+#(continue로 넘기기)
+
+item=input("몇 개를 담습니까: ")
+for i in range(item):
+    print("2+1상품입니다")
+    if(i%3==0):
+        continue
+    total +=
+print("총 가격은 {},000원입니다".format(total))
+
+
+
+
 
 
