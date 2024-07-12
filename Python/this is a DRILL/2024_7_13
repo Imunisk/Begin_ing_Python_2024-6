@@ -1,0 +1,15 @@
+#I am Coding
+
+'''
+from random import *
+print(random()*40+1)
+print(randint(1,45)
+
+from random import*
+
+work=randint(4,28)
+print("Next meeting will be held monthly in day {0}. Noted.".format(work))
+
+
+
+'''
