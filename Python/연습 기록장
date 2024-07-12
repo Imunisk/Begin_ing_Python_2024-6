@@ -1,0 +1,26 @@
+#난수와 숫자리스트 작성하기
+#방법1
+from random import *
+
+users= range(1,21)
+users= list(users)
+
+shuffle(users)
+winners= sample(users,4)
+
+print("--당첨자 발표--")
+print("치킨 당첨자 : {0}".format(winners[0]))
+print("커피 당첨자 : {0}".format(winners[1:]))
+
+#방법2
+from random import *
+
+users= list(range(1,21))
+shuffle(users)
+chicken_winner=sample(users,1)
+remain_users=set(users)- set(chicken_winner)
+coffee_winners=sample(list(remain_users),3)
+
+print("--당첨자 발표--")
+print("치킨 당첨자 : {0}".format(chicken_winners))
+print("커피 당첨자 : {0}".format(coffee_winners))
