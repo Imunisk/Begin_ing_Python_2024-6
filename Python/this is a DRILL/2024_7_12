@@ -250,6 +250,118 @@ for i in range(item):
 print("총 가격은 {},000원입니다".format(total))
 
 
+# Function MAkes
+def open_account():
+    print("New Account has newly opened.")
+open_account()
+
+def deposit(balance,money):
+    print("{0}dollors has been sent. Balance reads {1}dollors.".format(money,balance+money))
+    return balance+money
+
+def withdraw(balance,money):
+    if balance>=money:
+        print("{0}dollors are coming in. Blance reads {1}dollors.".format(money,balance-money)
+        return balance-money
+    else:
+        print("Not Enough Balance. BALANCE reads {0} dollors.".format(balance))
+        return balance
+
+balance=0
+balance=deposit(balance,1000)
+balance=withdraw(balance,2000)
+balance=withdraw(balance,500)
+
+#
+def open_account():
+    print("New Newly")
+
+open_account()
+
+def deposit(balance,money)
+    print("{0}dollors has been sent. Balance reads {1} dollors.".format(money,balance+money)
+    return balance+money
+
+def withdraw_night(balance,money):
+    commision=100
+    print("commission fee costs 100")
+    return commission, balance-money-commission
+
+balance=0
+balance=deposit(balance,1000)
+commission,balance= withdraw_night(balance,500)
+print("Commi----")
+
+def add(num1,num2):
+    return num1+num2
+
+#default
+def profile(name,age=20,main_lang="java"):
+    print("Name:{}\tAge:{}\tMain_lang:\t".
+format(name,age,main_lang))
+
+profile("Charlie",20,"python")
+profile("jane")
+profile("Jake",age=19, main_lang="C++")
+
+
+def profile(name,age,lang1,lang2,lang3,langg4,lang5):
+    print("name:{}\tage:{}\t".forman(name,age))
+    print(lang1,lang2,lang3,lang4,lang5)
+
+#
+def profile(name,age,*language)
+    print("name: {}\t age: {}\t".
+format(name,age), end="")
+    for lang in language:
+        print(lang,end="")
+    print()
+
+#
+def rent(people):
+    glasses=20
+    glasses= glasses-people
+    print(: {}".format(glasses))
+
+# 7.5 연습문제
+def Aver(height,gender):
+    if(gender=="남자"):
+        weight=height(*height*22        
+    if(gender=="여자"):
+        weight=height*height*21
+
+    print("신장{0}cm {1}의 표준 체중은 {2}입니다."
+.format(height,gender,float.2(weight)))
+
+#input
+answer=input("Type as you wish: ")
+print("you typed {}".format(answer))
+print("you typed" +answer)
+#좌로정렬 우로정렬
+scores={"Math":0,"Eng":50,"Code":100}
+for subject,score in scores.items():
+    print(subject.ljust(8),str(score).rjust(4),sep=":")
+##
+scores={"Math":0,"Eng":50,"Cook":70}
+for subject,score in score.items():
+    print(subject.ljust(8),str(score)
+.rjust(4),sep=":")
+###
+for subject,score in score.items():
+    print("subject.ljust(8),str(score)
+.rjust(4),sep=":")
+####
+Price_Tag={"Banana":2000, "Cookie":1200, "Cake:":9000}
+for prod,price in Price_Tag.items():
+    print(prod.ljust(10),str(price)
+.rjust(6),sep=":")
+###
+score{"Math":60,"Science":80,"PT":60}
+for sub,score in score.items():
+    print("sub.ljust(8),str(score)
+.rjust(4),sep=":")
+
+
 
 
 
