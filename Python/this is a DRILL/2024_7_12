@@ -1,1 +1,58 @@
-import
+
+#난수와 숫자리스트로 추첨 공 뽑기
+
+#방법1
+from random import *
+
+member=range(1,21)
+member=list(member)
+
+shuffle(member)
+
+winner=sample(member,4)
+
+print("-------")
+print("Chicken Coupon : {0}".format(winner[0]))
+print("Coffee Coupon : {0)".format(winner[1:]))
+
+
+#방법2
+from random import *
+
+member= list(range(1,21))
+shuffle(member)
+ChickenCoupon=sample(member,1)
+remain_member= set(member)-set(ChickenCoupon)
+CoffeeCoupon= sample(list(remain_member),3)
+
+print("-------")
+print("Chicken Coupon:{0}".format(ChickenCoupon))
+print("Coffee Coupon:{0)".format(CoffeeCoupon))
+
+
+
+# +
+from random import *
+
+user=range(1,21)
+user= list(user)
+shuffle(user)
+winner=sample(user,4)
+print("Coffee: {0}".format(winner[0]))
+print("Chicken: {0}".format(winner[1:]))
+
+coworker=list(range(1,21))
+shuffle(coworker)
+Meat=sample(coworker,1)
+remain_coworker= set(coworker)-set(Meat)
+Pie=sample(list(remain_coworker,3))
+
+print("----")
+print("Meat goes to :{0}".format(Meat))
+print("Pie goes to :{0}".format(Pie))
+
+# YES #PerFECT!
+
+
+
+
