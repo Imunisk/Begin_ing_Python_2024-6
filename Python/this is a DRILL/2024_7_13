@@ -135,6 +135,29 @@ with open("study.txt","r",encoding="utf8") as study_file:
     print(study_file.read())
 
 
+# CLASS
+
+class Unit:
+    def __init__(self,name,hp,damage):
+        self.name= name
+        self.hp= hp
+        self.damage= damage
+        print("New Incoming. {}unit."
+.format(self.name))
+        print("HP {}. Damage {}"
+
+.format(self.hp,self.damage))
+
+soldier1= Unit("Private",40,5)
+soldier2= Unit("Private",40,5)
+tank= Unit("Tank",150,35)
+
+
+
+
+
+
+
 
 
 
