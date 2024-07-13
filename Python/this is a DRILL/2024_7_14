@@ -1,0 +1,28 @@
+#Yes Sir Drill
+
+
+'''
+class Unit:
+    def __init__(self,name,hp,damage):
+        self.name=name
+        self.age=age
+        self.hp=hp
+        self.damage=damage
+        print("{}유닛을 생성했습니다."
+.format(self.name)
+        print("체력 {}, 공격력 {}"
+.format(self.hp,self.damage)
+
+soldier1= Unit("보병", 40, 5)
+soldier2= Unit("보병", 40, 5)
+tank= Unit("탱크", 150, 35)
+
+
+
+
+
+
+'''
+
+
+#
