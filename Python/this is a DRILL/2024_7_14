@@ -17,12 +17,141 @@ soldier1= Unit("보병", 40, 5)
 soldier2= Unit("보병", 40, 5)
 tank= Unit("탱크", 150, 35)
 
+class Unit:
+    def __init__(self,name,hp,damage):
+        self.name=name
+        self.hp=hp
+        self.damage=damage
+        print("This is {}"
+.format(self.name)
+        print("HP:{}, damage:{}"
+.format(self.hp,self.damage)
+
+soldier1=Unit("Sol",40,5)
+soldier2=Unit("sol",30,5)
+tank=Unit("U",80,8)
+
+class Unit:
+    def __init__(self,name,hp,damage):
+        self.name=name
+        self.hp=hp
+        self.damage=damage
+        print("This {}".format(self.name))
+        print("{}".format(self.hp,self.damage))
+
+class Unit:
+    def __init__(self,name,hp,damage):
 
 
+클래스명은 unit으로 정하고 그 클래스 안에 메소드를 정의하며 첫째 전달값 변수는 셀프로 짓는다.
+그리고 그 메소드 안에 새롭게 정의하는 self. 변수눈 인스턴트 변수로 불리운다.
+객체명=클래스명(전달1전달2)
+
+stealth1= Unit("TOPgun",80,5)
+print("NAme:{},damage:{}"\
+.format(stealth1.name,stealth1.damage))
 
 
 
 '''
 
 
+#claSS
+
+class Unit:
+    def __student__(self,name,no,hair):
+        self.name=name
+        self.no= no
+        self.hair=hair
+        print("Introducing {} here."
+.format(self.name)
+        print("And this says {} or has {} hair."
+.format(self.no, self.hair)
+
+student1= Unit("JAke",1,"curly")
+student2= Unit("Anne",2,"straight")
+student3= Unit("Peter",3,"short")
+
+
+#star GAME
+
+
+
 #
+class Unit:
+    def __init__(self,name,hp):
+        self.name=name
+        self.hp=hp
+        print("name:{},hp:{}".format\
+(self.name,self.hp)
+
+soldier1=Unit("SOL",10,5)
+soldier2=Unit("sol",10,4)
+tank=Unit("Tank",50,19)
+
+stealth1= Unit("TopGun",40,30)
+stealth1.cloaking=True
+
+if(stealth.cloaking==True):
+   print("{}is now transparent."\
+.format(stealth.name))
+
+#
+Class AttackUnit:
+    def __init__(self,name,hp,damage):
+        self.name=name
+        self.hp=hp
+        self.damage=damage
+    def attack(self,location):
+        print("{} : {} 방향을 공격합니다. [공격력 {}]"\
+.format(self.name,location,self,.damage))
+
+
+# Heritage
+
+class Unit:
+    def __init__(self,name,hp):
+        self.name=name
+        self.hp=hp
+
+class AttackUnit(Unit):
+    def __init__(self,name,hp,damage):
+        Unit.__init__(self,name,hp)
+        self.damage=damage
+
+    def attack(self,location):
+        print("{0} : Fire toward {1} area. [Damage{2}])".format(self.name,location,self.damage))
+
+    def damaged(self,damage):
+        print("{} : it's damaged around{}."\
+.format(self.name,self.damage))
+        self.hp-= damage
+        print("{} : remain hp is {}."\
+.format(self.name,self.hp))
+        if (self.hp<=0):
+            print("{}: destroyed!"\
+.format(self.name)
+
+Fire1= AttackUnit("FireBat",50,16)
+Fire1.attack("5")
+Fire1.damaged(23)
+
+Class Flyable:
+    def __init__(self,flying_speed):
+        self.flying_speed=flying_speed
+
+    def fly(self,name,location):
+        print("{0} : Fly toward {1} area."\
+.format(self.name,location))
+
+
+Class FlyableAttackUnit(AttackUnit,Flyable):
+    def __init__(self,name,hp,damage,flying_speed):
+        AttackUnit.__init__(self,name,hp,damage)
+        Flyable.__init__(self,flying_speed)
+
+####
+
+
+
+
