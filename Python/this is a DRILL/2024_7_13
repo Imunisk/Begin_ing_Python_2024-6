@@ -10,6 +10,133 @@ from random import*
 work=randint(4,28)
 print("Next meeting will be held monthly in day {0}. Noted.".format(work))
 
+print(numbers[0])
+print(numbers[-4:])
+
+print("ab"+"ab")
+print("ab","ab")
+print("The %dth Anniversary" % numbers)
+print("%d ways to %s" % (8, "sun"))
+print("The {0}th Anniversary".format(numbers))
+print("For the %s" % "King")
+print("As a matter of {0}".format(fact))
+print(f"i am {numbers}th Corona.")
+
+
+subway=["q","w","e"]
+subway.append("r")
+print(subway)  # [ q w e r]
+subway.pop()
+print(subway)   #[ q,w,e ]
+print(subway.count("q"))    #1
+
+num=[5,2,6,1]
+num.sort()   #[1,2,5,6]
+
+
+cabinet={a:"apple",b:"boat",c:"cake"}
+print(cabinet[a])   # apple
+print(a in cabinet)  #True
+del cabinet[b]
+prnit(cabinet.items())
+
+my_data={1::"one,2:"Two"}
+
+(Age,score,Grade)=(10,40,"A")
+
+print(java&python)
+print(java-python)
+
+python.add("K")
+
+
+
+from random import *
+
+users=range(1,21)
+shuffle(users)
+
+winner=sample(users,4)
+chicken=winner[0]
+coffee=winner[1:]
+
+
+def profile(name,age,lang)
+    print(name,age,lang)
+
+profile("Ace",age=20,lang="Code")
+
+
+def profile(name,age,*lang)
+    print("Name: {}\t,Age: {}\t"
+.format(name,age), end="")
+    print(lang)
+
+profile("Ace",age=20,lang="Code")
+
+
+def profie(name,age,*lang):
+    print("N: {}\tA: {}\t"
+.format(name,age), end="")
+    for lang in lang:
+        print(lang, end="")
+    print()
+
+score={"Eng":50,"Math":90,"Art":30}
+
+for subject,score in score.items():
+    print(subject.ljust(8),score
+.rjust(4),sep=":")
+
+for sub,score in score.items():
+    print(sub.ljust(8),str(score)
+.rjust4),sep=":")
+
+for num in range(1,21):
+    print("WAiting : "+str(num).zfill(3))
+
+
+print("V","C","tion", sep="a")
+
+score={"a": 3, "b":9, "c":2}
+for sub, score in score.items():
+    print("sub.ljust(8),str(score)
+.rjust(4), sep=":")
+
+for num in range(1,11):
+    print(" Waiting in :" +str(num).zfill(4))
+
 
 
 '''
+
+# 피클 모듈 써 읽고쓰기
+import pickle
+
+profile_file= open("profile.pickle","wb")
+profile={"Name":"Snoopy","Age":"30", "hobby":  [soccer,golf,surfing]}
+print(profile)
+
+pickle.dump(profile,profile_file)
+profile_file.close()
+
+profile_file=open("profile.pickle","rb")
+profile=pickle,load(profile_file)
+print(profile)
+profile_file.close()
+
+# with
+import pickle
+
+with open("study.txt","w", encoding="utf8") as study_file:
+    study_file.write("I am studying")
+
+with open("study.txt","r",encoding="utf8") as study_file:
+    print(study_file.read())
+
+
+
+
+
+
+
