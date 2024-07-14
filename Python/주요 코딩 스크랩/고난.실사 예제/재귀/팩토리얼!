@@ -1,0 +1,7 @@
+#느낌표 ! 팩토리얼 함수 만들기
+
+def factorial(n):
+    if n == 1 or n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
