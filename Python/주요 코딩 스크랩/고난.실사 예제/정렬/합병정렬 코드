@@ -1,0 +1,6 @@
+#합병정렬
+
+# data sort algorithm : Merge Sort
+# Iterative
+
+def i_MergeSort(lst):
