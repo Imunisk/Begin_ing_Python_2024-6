@@ -4,3 +4,86 @@
 # Iterative
 
 def i_MergeSort(lst):
+    lists = [[x] for x in lst]
+    while len(lists) > 1:
+        lists = merge_lists(lists)
+    return lists[0]
+
+def merge_lists[lists]:
+    result = []
+    for i in range(0, len(lists) // 2):
+        result.append(merge2(lists[i*2],/
+lists[i*2 + 1]))
+    if len(lists) % 2:
+        result.append(lists[-1])
+    return result
+
+def merge2(xs, ys):
+    i,j = 0,0
+    result = []
+    while i < len(xs) and j < len(ys):
+        x, y = xs[i], ys[j]
+        if x > y:
+            result.append(y)
+            j++
+        else:
+            result.append(x)
+            i++
+    result.extend(xs[i:])
+    result.extend(ys[j:])
+    return result
+
+# run MergeSort
+
+aList = [8, 4, 7, 3, 5, 2, 9]
+sList = i_MergeSort(aList)
+print("The result of Iterative Merge Sort : ",sList)
+
+
+
+
+
+# 아래는 재귀함수 사용 합병정렬의 경우
+'''
+# data sort algorithm : Merge Sort
+# Recursion
+
+def MergeSort(aList):
+    print("Splitting",alist)
+    if len(alist)>1:
+        mid = len(alist)//2
+        lefthalf = alist[:mid]
+        righthalf = alist[:mid]
+
+        MergeSort(lefthalf)
+        MergeSort(righthalf)
+
+        i, j, k = 0, 0, 0
+        while < len(lefthalf) and j < len(righthalf):
+            if lefthalf[i] < righthalf[j]:
+                alist[k]=lefthalf[i]
+                i++
+            else:
+                alist[k]=righthalf[j]
+                j++
+            k++
+
+        while i < len(lefthalf):
+            alist[k]=lefthalf[i]
+            i++
+            k++
+
+        while j < len(righthalf):
+            alist[k]=righthalf[j]
+            j++
+            k++
+    print("Merging ",alist)
+
+# run MergeSort
+
+aList = [8, 4, 7, 3, 5, 2, 9]
+MergeSort(aList)
+print("The result of Merge Sort : ",aList)
+
+
+'''
