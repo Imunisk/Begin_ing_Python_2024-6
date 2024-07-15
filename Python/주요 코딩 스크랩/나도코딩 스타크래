@@ -140,5 +140,21 @@ print("[notice] Siege Mode for Tank Unit is now available. Siege Mode Research c
 for unit in attack_units:
     if: isinstance(unit,Soldier):
         unit.booster()
-    elif
-    elif
+    elif isinstance(unit, Tank):
+        unit.set_siege_mode()
+    elif isinstance(unit, Stealth):
+        unit.cloaing()
+
+# All Unit set attack now!
+for unit in attack_units:
+    unit.attack("toward 1")
+#All Unit get damaged
+for unit in attack_units:
+    unit.damaged(randint(5,20))
+
+# game over
+game_over()
+
+
+
+
