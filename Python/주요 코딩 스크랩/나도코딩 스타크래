@@ -69,7 +69,76 @@ class Tank(attackUnit):
             self.siege_mode = False
 
 class Flyable:
-    def
+    def __init__(self, flying_speed):
+        self.flying_speed = flying_speed
+
+    def fly(self, name, location):
+        print("{0} : fly toward {1}. [at speed {2}]".format(name,location,self.flying_speed))
 
 
+class FlyableAttackUnit(AttackUnit, Flyable):
+    def __init__(self, name, hp, damage, flying_speed):
+        AttackUnit.__init__(Self,name,hp,damage\
+,0)
+        Flyable.__init__(self,flying_Speed)
 
+    def move(self, location):
+        self.fly(self, name, location)
+
+class Stealth(FlyableAttackUnit):
+    def __init__(self):
+        FlyableAttackUnit.__init__(self,'topGun', 80,20,5)
+        self.cloaked = False
+
+    def cloaking(self):
+        if self.cloaked == True:
+            print("{0} : Stealth off."\
+.format(self.name))
+            self.cloaked = False
+        else:
+            print("{0} : Stealth On."\
+.format(self.name))
+            slef.cloaked =True
+
+def game_start():
+    print("[notice] New Game is Being Started.")
+
+def game_over():
+    print("Player : GG")
+    print(:[Player] is leaving.")
+
+#
+# 실제 시연
+#
+
+game_start()
+
+so1 = Soldier()
+so2 = Soldier()
+so2 = Soldier()
+
+ta1 = Tank()
+ta2 = Tank()
+
+st1 = Stealth()
+
+attack.units = []
+attack_units.append(so1)
+attack_units.append(so2)
+attack_units.append(so3)
+attack_units.append(ta1)
+attack_units.append(ta2)
+attack_units.append(st1)
+
+# All Unit set Go
+for unit in attack_units:
+    unit.move("toward 1")
+
+Tank.siege_developed = True
+print("[notice] Siege Mode for Tank Unit is now available. Siege Mode Research completed.")
+
+for unit in attack_units:
+    if: isinstance(unit,Soldier):
+        unit.booster()
+    elif
+    elif
