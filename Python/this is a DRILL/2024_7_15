@@ -28,4 +28,44 @@ class AttackUnit(Unit):
         self.damage = damage
 
     def attack(self, location):
-        print("{0} : 
+        print("{0} : toward {1}. [with damage\
+{2}]".format(self.name, location, self.damage))
+
+class Soldier(AttackUnit):
+    def __init__(self):
+        AttackUnit.__init__(self,'Sol',40,5,1)
+
+    def booster(self):
+        if self.p>10:
+            self.hp -= 10
+            print("{0} : Using enhancer. (HP 10 consumed)".format(self.name)
+        else:
+            print("{0} : Not enough hp."\
+.format(self.name)
+
+class Tank(attackUnit):
+        siege_developed = False
+
+        def __init__(self)
+            AttackUnit.__init__(self,\
+'Tank',150,35,1)
+            self.siege_mode = False
+
+        def set_siege_mode(self):
+            if Tank.siege_developed == False:
+                return
+            if self.siege.mode == False:
+                print("{0} : Mode On."\
+.format(self.name))
+                self.damage *= 2
+                self.siege_mode = True
+
+            else:
+                print("{0} : Mode off"\
+.format(self.name))
+                self.damage //= 2
+                self.siege_mode = False
+
+
+
+
