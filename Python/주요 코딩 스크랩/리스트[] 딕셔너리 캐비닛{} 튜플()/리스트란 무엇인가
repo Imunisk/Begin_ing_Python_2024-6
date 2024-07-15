@@ -33,3 +33,78 @@ print(Cabi[3])   #Pooh
 print(Cabi.get(4))  #None
 
 
+
+
+
+#더 많은 사례
+
+#리스트_커피
+coffee = ['에스프레소', '아메', '라떼', '카페모카']
+print(coffee)
+
+num = 0
+for s in coffee:
+    num++
+    print('%d. %s' % (num,s))   # 1. 에스프레소
+                                  2. 아메리카노
+
+
+#리스트_가위바위보
+rsp = ['ROCK', 'SCISSOR', 'PAPER']
+for i in range(;en(rsp)):
+    print(rsp[i], end='')
+print()
+
+from random import choice
+print('---- 5 rsp ----')
+for i in range(5):
+    print(choice(rsp))
+
+
+#리스트_중국집 주문바꿀게요
+food - ['Black', 'Red', 'ChaoMien']
+print(food)
+
+food.append('Fry')
+print(food)
+
+food[1]= 'White'
+print(food)
+
+#튀김을 군만두로 바꾸기
+food[food.index('Fry')] = 'Fried Dumpling'
+
+
+#리스트_플레이 리스트 선곡
+kpop = []
+kpop.insert(0,'뉴진스')
+kpop.insert(0,'비투비')
+print(kpop)    # ['비투비','뉴진스']
+
+#딕셔너리_플레이 리스트 선곡
+kpop = {'비투비':'Moovie'}
+kpop[뉴진스] = 'Attention'
+print(kpop)    # ['비투비','뉴진스':'Attention']
+
+
+#리스트_플레이 리스트 선곡2
+kpop = ['비투비','뉴진스','아이브']
+kpop.pop(2)
+kpop.remove('뉴진스')
+kpop.append('세븐틴')
+print(kpop)     # ['비투비','세븐틴'】
+
+
+#딕셔너리_영어사전
+month = {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr'}
+month[5] = 'May'
+month[6] = 'June'
+month[7] = 'July'
+
+#딕셔너리_수도이름
+Capital = {'Korea':'Seoul', 'China':'Beijing', 'Japan':'Tokyo', 'USA':'Washington', 'Mexico': 'MexicoCity', 'Germany':'Berlin'}
+
+#딕셔너리_위도
+#튜플을 key로 사용가능하다
+city = {(37.33, 126.58): 'Seoul', (35.06, 129.03): 'Busan}
+
