@@ -1,9 +1,0 @@
-import cv2
-
-img=cv2.imread('D:/img/img/18.jpg',0)
-img=cv2.cvtColor(img,cv2.COLOR_BAYER_BG2BGRA)
-
-cv2.imshow('imsi',img)
-
-cv2.waitKey(0)
-cv2.destroyAllWindows()
