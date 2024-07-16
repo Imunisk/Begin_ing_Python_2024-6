@@ -1,6 +1,6 @@
 '''
 
-정수와 문자열 차이 인식하기
+정수와 문자열 차이 인식하기 (=print - Using comma or f word)
 
 
 예시 -> print(i,"단") 와 print("1"+ "*" * (2 ))의 차이
