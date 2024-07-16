@@ -1,3 +1,6 @@
+'''
+AI 손인식 프로그램
+'''
 
 import cv2
 import time
