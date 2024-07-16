@@ -1,0 +1,30 @@
+■join() 메서드
+
+예시1
+items = ('apple', 'banana', 'kiwi')
+print('->'.join(items))
+#  apple->banana->kiwi
+
+예시2
+딕셔너리도 된다 (.key())
+HowMany = {'dog': 2, 'lion': 5, 'pig': 1}
+print(" ".join(HowMany.keys()))
+#  dog lion pig
+
+예시3
+lines = ['First line', 'Second line', 'Third line']
+result = '\n'.join(lines)
+print(result)
+#  First line
+   Second line
+   Third line
+
+
+
+
+■print() 내부에서
+
+예시1
+items = ('apple', 'banana', 'kiwi')
+print(items, sep = " & ")
+#  apple & banana & kiwi
