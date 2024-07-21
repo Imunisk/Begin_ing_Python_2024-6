@@ -1,0 +1,25 @@
+
+# String = Formating methode. i will show you
+
+Korea = "Seoul"
+Korea_num = 82
+Thai = "Bangkok" 
+Thai_num = 66
+India = "New Delhi" 
+India_num = 91
+input("Type where are you from.\nMy Home land: "\ 
+, My_Home)
+input("My_Home_Number is :", MY_Home_Num)
+  #  === >  Italy & 39
+
+print("   ")
+("I am from" + Korea + "CALL upon" + Korea_num +\
+"please")
+("I am from {0}. CAll upon {1} please."\
+.format(Korea, Korea_num))
+(f"I am from {India}. CALL upon {India_num} \ please.")
+("I am from %s. (as %d)" % India, India_num)
+("My granny's homeland is %s. (as %s)" %\
+(My_Home, My_Home_Num))
+
+
