@@ -26,3 +26,8 @@ coffee_winners=sample(list(remain_users),3)
 print("--당첨자 발표--")
 print("치킨 당첨자 : {0}".format(chicken_winners))
 print("커피 당첨자 : {0}".format(coffee_winners))
+
+
+오늘의 당첨자는 5번 입니다! 축하합니다.
+(Der heutige Gewinner ist Nummer 5!
+ Herzlichen Glückwunsch.)
