@@ -1,0 +1,7 @@
+# 2024년 7월 xX일
+# 예약어(키워드) 확인 프로그램
+# ver_00
+# 개발자 : kun
+
+import keyword
+print(keyword.kwlist)
