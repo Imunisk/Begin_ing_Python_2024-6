@@ -19,3 +19,17 @@ else:
 
 #  > 접근하고자 하는 키: origin
 # 필리핀
+
+
+
+
+# 존재하지 않는 키에 접근해 봅시다
+value = dic.get("존재하지 않는 키")  # 예를 들어 Flavor
+print("값 : ", value)
+
+# None 확인해보기
+if value == None:
+    print("Error is made.")
+
+# 값 :  None
+# Error is made.
