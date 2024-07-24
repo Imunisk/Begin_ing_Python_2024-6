@@ -1,0 +1,14 @@
+# 딕셔너리 출력예쁘게
+
+# print(dic)             # 출력 1
+for key in dic:          # 출력 2
+    print(key, ":", dic[key])
+
+# 출력 1의 경우
+{'name': '7D 건조 망고', 'type': '당절임', 'ingredient': ['망고', '설탕', '메타중아황산나트륨', '치자황색소'], 'origin': '필리핀'}
+
+# 출력 2의 경우
+name : 7D 건조 망고
+type : 당절임
+ingredient : ['망고', '설탕', '메타중아황산나트륨', '치자황색소']
+origin : 필리핀
