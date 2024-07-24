@@ -51,3 +51,44 @@ print(list_c[0][1][1])
 
 #  [[1,2,3], [4,5,6], [7,8,9]]
 #  5
+
+
+
+# 일부 지우기
+list_c = [1,2,1,2]
+list_c.remove(2)
+print(list_c)
+
+list_c.remove(1)
+print(list_c)
+
+# 모두 지우기
+list_d = [1,2,1,2]
+print(list_d)
+
+list_d.clear(1)
+print(list_d)
+
+
+# 오름차순
+list_e = [52,273,103,32,275,1,7]
+print(“정렬 이전 : “, list_e)
+
+list_e.sort()
+print(“정렬 이후 : “, list_e)
+
+
+# 오름차순이 디폴트
+list_e = [52,273,103,32,275,1,7]
+list_e.sort()
+print("정렬 이후 : ", list_e)
+print()
+list_e.sort(reverse=True)
+print("내림차순 정렬 이후 : ", list_e)
+
+
+
+# 리스트를 for 문으로 출력하기 
+my_array = [52,273,103,32,275,1,7]
+for element in my_array:
+    print(element, end="  ")
