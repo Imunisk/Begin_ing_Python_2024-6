@@ -1,0 +1,32 @@
+# 피라미드 3번
+
+floor = int(input("몇 단까지 쌓으시겠습니까? ==> "))
+#floor = 10
+#devide_floor = floor//2
+
+for i in range(1,floor):
+    print(" "*(floor-i), "*"*(i*2-1))
+
+for j in range(floor,0,-1):
+    print(" "*(floor-j), "*"*(j*2-1))
+
+
+
+# 루프
+# 피라미드 4번 - 무한반복
+
+while(1):
+    floor = input("몇 단까지 쌓으시겠습니까? ==> ")
+    #floor = 10
+    #devide_floor = floor//2
+    if floor == "a":
+        print(floor,"가 입력되어서 프로그램을 종료합니다.")
+        break;
+    elif floor == "Q":
+        print(floor,"가 입력되어서 프로그램을 종료합니다.")
+        break;
+    else:
+        for i in range(1,int(floor)):
+            print(" "*(int(floor)-i), "*"*(i*2-1))
+        for j in range(int(floor),0,-1):
+            print(" "*(int(floor)-j), "*"*(j*2-1))
