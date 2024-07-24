@@ -1,5 +1,13 @@
 # 딕셔너리 출력예쁘게
 
+
+dic = {
+    "name" : "매일 동결건조 두리안",
+    "net_weight" : "210g",
+    "best_before" : “12개월,
+    "origin" : "필리핀"
+}
+
 # print(dic)             # 출력 1
 for key in dic:          # 출력 2
     print(key, ":", dic[key])
