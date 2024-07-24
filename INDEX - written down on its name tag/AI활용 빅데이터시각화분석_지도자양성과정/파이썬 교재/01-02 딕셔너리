@@ -1,11 +1,30 @@
+# 딕셔너리 e.g) 1
 # 딕셔너리 선언
 dic = {
-    "name" : "7D 건조 망고"
-    "type" : "당절임"
-    "ingredient" : ["망고", "설탕", "메타중아황산나트륨", "치자황색소"
+    "name" : "매일 동결건조 두리안",
+    "net_weight" : "210g",
+    "best_before" : “12개월,
     "origin" : "필리핀"
 }
 
+# 출력
+print("name: ", dic["name"])
+print("net_weight: ", dic["net_weight"])
+print("best_before: ", dic["best_before"])
+print("origin: ", dic["origin"])
+print()
+
+
+
+
+# 딕셔너리 e.g) 2
+# 딕셔너리 선언
+dic = {
+    "name" : "7D 건조 망고",
+    "type" : "당절임",
+    "ingredient" : ["망고", "설탕", "메타중아황산나트륨", "치자황색소"],
+    "origin" : "필리핀"
+}
 
 # 출력
 print("name: ", dic["name"])
@@ -17,3 +36,15 @@ print()
 # 값을 변경
 dic["name"] = "8D 건조 망고"
 print("name: ", dic["name"])
+
+# 딕셔너리 추가
+dic["price"] = 6000
+print("새로운 항목 추가 ==> ", dic)
+
+# 딕셔너리 추가
+del dic[ingredient]
+print("삭제 확인 ==> ", dic)
+
+# 새로운 항목 추가 ==> {'name': '8D 건조 망고', 'type': '당절임',\
+'ingredient': ['망고', '설탕', '메타중아황산나트륨', '치자황색소'], 'origin': '필리핀', 'price': 6000}
+# 삭제 확인 ==>  {'name': '8D 건조 망고', 'type': '당절임', 'origin': '필리핀', 'price': 6000}
