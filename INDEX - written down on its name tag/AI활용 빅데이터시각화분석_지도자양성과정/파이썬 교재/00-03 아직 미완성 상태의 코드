@@ -1,0 +1,28 @@
+# 입력을 받음
+s_num = input("정수 입력> ")
+i_num = int(s_num)
+
+# 아직 미완성 상태의 코드
+if i_num > 0:
+    # 미구현 상태
+    pass
+else:
+    # 미구현 상태
+    pass
+
+
+# Ver.2 내일이면 잊어버릴지 모르니.
+#       '이거 어제 안 했구나' 알도록 '비명' 알람 세팅하는 방법
+#       (코드는 잘 실행됨 O. 해당 부분에 들어서는 순간 올류를 발생시킴.)
+
+# 입력을 받음
+s_num = input("정수 입력> ")
+i_num = int(s_num)
+
+# 아직 미완성 상태의 코드
+if i_num > 0:
+    # 미구현 상태
+    raise NotImplementedError
+else:
+    # 미구현 상태
+    raise NotImplementedError
