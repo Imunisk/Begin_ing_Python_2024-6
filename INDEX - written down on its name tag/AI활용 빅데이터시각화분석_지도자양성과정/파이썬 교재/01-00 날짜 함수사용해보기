@@ -1,0 +1,56 @@
+#  현재 날짜 출력
+#  w datetime 함수
+
+
+# 날짜 / 시간
+import datetime
+now = datetime.datetime.now()
+
+# 출력
+print(now.year,"년")
+print(now.month,"월")
+print(now.day,"일")
+print(now.hour,"시")
+print(now.minute,"분")
+print(now.second,"초")
+
+#
+‘’’
+2024 년
+7 월
+24 일
+9 시
+36 분
+31 초
+‘’’
+
+# 날짜 / 시간
+import datetime
+
+# 현재 날짜
+now = datetime.datetime.now()
+
+# 출력
+print("{}년 {}월 {}일 {}시 {} 분 {}초".format(
+    now.year,
+    now.month,
+    now.day,
+    now.hour,
+    now.minute,
+    now.second
+))
+
+
+# 입력을 받음
+s_num = input("정수 입력> ")
+i_num = int(s_num)
+
+# 아직 미완성 상태의 코드
+if i_num > 0:
+    # 미구현 상태
+    pass
+else:
+    pass
+    # 미구현 상태
+
+
