@@ -1,0 +1,16 @@
+counter = 0
+
+def fibonacci(n):
+    # counter += 1          # 이리 쓰면 무의미. 그저 동명이인인 로컬 변수다.
+    global counter += 1     # 이래 써야만 한다. 파이썬이 마련해둔 특이한 시스템이다
+
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+
+
+print(fibonacci(10))
