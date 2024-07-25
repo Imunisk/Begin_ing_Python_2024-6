@@ -1,4 +1,4 @@
-# 피라미드 3번
+# 피라미드
 
 floor = int(input("몇 단까지 쌓으시겠습니까? ==> "))
 #floor = 10
@@ -13,7 +13,7 @@ for j in range(floor,0,-1):
 
 
 # 루프
-# 피라미드 4번 - 무한반복
+# 피라미드 - 무한반복
 
 while(1):
     floor = input("몇 단까지 쌓으시겠습니까? ==> ")
@@ -30,3 +30,33 @@ while(1):
             print(" "*(int(floor)-i), "*"*(i*2-1))
         for j in range(int(floor),0,-1):
             print(" "*(int(floor)-j), "*"*(j*2-1))
+
+
+
+# 교재 -  문자열 연산자 사용하지 않고!
+# 피라미드 1 (직각 삼각형)
+
+output = ""               # 기고를 위해 초기화
+
+for i in range(1,10):    # 행
+    for j in range(0,i):   # 열
+       output += "*"
+    output += "\n"
+
+print(output)
+
+# *\n**\n***\n
+# ==>  피라미드 모양 출력
+
+# 피라미드 2 (정 피라미드)
+output = ""
+
+for i in range(1,15):    # 행
+    for j in range(14,i,-1):   # 열
+        output += " "
+    for k in range(0,2*i-1):   # 열
+        output += "*"
+
+    output += "\n"
+
+print(output)
