@@ -1,0 +1,15 @@
+# 시간을 기반으로 반복하기
+# 유닉스 타임 : 세계 표준시로 몇 초가 지났는지 나타낸 것
+# 유닉스 타임과 while 반복문을 조합하면 특정 시간동안 RUN 하는 코드를 짤수 있습니다.
+
+import time
+number = 0
+
+targetTick = time.time() + 5
+while time.time() < targetTick:
+    number += 1
+
+print("5초 동안 {}번 반복했습니다.".format(number))
+
+# 5초 동안 33902236번 반복했습니다.
+# 해당 컴 사양에 따라 다른 숫자가 나옵니다.
