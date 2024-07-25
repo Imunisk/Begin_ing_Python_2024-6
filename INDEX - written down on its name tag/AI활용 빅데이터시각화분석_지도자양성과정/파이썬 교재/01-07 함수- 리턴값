@@ -1,0 +1,35 @@
+# CASE 1
+
+def return_test():
+    print("A 위치입니다.")
+    return
+
+print("B 위치입니다.")
+    
+return_test()  # return 뒤에 있는 코드는 무의미합니다.
+
+
+# CASE 2
+def return_test():
+    print("A 위치입니다.")
+    return
+
+print("B 위치입니다.")   # B 출력하고, 함수에서 A 나옵니다.
+return_test()
+
+
+# return에 값이 있을 때
+def return_test():
+    return 100
+
+value =return_test()
+print(value)              # 100
+
+
+
+# return에 값이 있을 때
+def return_test():
+    return 100
+
+value =return_test()
+print(value)              # None
