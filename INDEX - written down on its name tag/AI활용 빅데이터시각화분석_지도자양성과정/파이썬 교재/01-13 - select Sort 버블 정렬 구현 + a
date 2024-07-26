@@ -1,0 +1,49 @@
+# 목표 1
+# random 함수를 사용하여 1~100 사이에서 10개의 숫자를 구하고
+# select sort로 구현
+
+# 목표 2
+# random 함수를 사용하여 1~45 사이에서 6개의 숫자를 구하고
+# bubble sort로 구현
+
+'''
+요구사항
+1. 공식확인
+2. 함수화
+3. 대량의 데이터 처리해보기
+'''
+
+
+# pip install random
+
+
+import random
+
+# 1부터 100 사이의 무작위 숫자 10개 생성
+random_numbers = [random.randint(1, 100) for _ in range(10)]
+print("Random Numbers:", random_numbers)
+# RUN 결과 : Random Numbers: [6, 81, 74, 100, 82, 68, 82, 21, 59, 6]
+
+
+
+# 선택 정렬은 리스트를 순회하며 가장 작은 값을 찾아 맨 앞에 있는 값과
+# 교환하는 방식으로 정렬합니다.
+
+def selection_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        # Find the minimum element in the remaining unsorted array
+        min_index = i
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        # Swap the found minimum element with the
+        # first element of the unsorted array
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+    return arr
+
+# 시험 구동
+sorted_numbers = selection_sort(random_numbers)
+print("Sorted Numbers:", sorted_numbers)
+
+# RUN 결과 : Sorted Numbers: [6, 6, 21, 59, 68, 74, 81, 82, 82, 100]
