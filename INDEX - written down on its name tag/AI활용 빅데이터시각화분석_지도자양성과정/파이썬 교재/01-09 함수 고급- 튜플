@@ -1,0 +1,50 @@
+# 소괄호를 사용하면 튜플. 대괄호면 리스트
+
+tuple_test = (10,20,10)
+tuple_test[0]      # 10
+
+
+# 리스트와 튜플의 자리바꿈
+
+[a,b] = [10,20]
+(c,d) = [10,20]
+
+print("a:",a)
+print("b:",b)
+print("c:",c)
+print("d:",d)
+
+
+
+# 괄호 없는 튜플
+
+tuple_test = 10,20,30,40
+print("# 괄호가 없는 튜플의 값과 자료형 출력")
+print("tuple_test:", tuple_test)
+print("type(tuple_test):", type(tuple_test))
+print()
+
+# 괄호 없는 튜플 활용
+
+a,b,c, = 10,20,30
+print("# 괄호가 없는 튜플을 이용한 할당")
+print("a:",a)
+print("b:",b)
+print("c:",c)
+
+# swab
+# 파이썬은 swab이 되니까, 다른 언어와 달리 temp 가 따로 필요업는 것이다.
+
+a,b = 10,20
+
+print("교환전 값")
+print("a:",a)
+print("b:",b)
+print()
+
+a,b = b,a
+
+print("교환후 값")
+print("a:",a)
+print("b:",b)
+print()
