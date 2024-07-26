@@ -1,5 +1,13 @@
 # 함수를 선언
 # 파이썬은 람다쓸때 이름이 시각적으로 보입니다. 다행이죠. JS에는 그나마 없습니다.
+'''
+람다란?
+Lambda 파라미터 : 리턴값
+e.g_) 기존의 코드
+def add(x,y):
+    return x+y     == >람다사용하면 (x,y): x=y
+'''
+
 
 power = lambda x: x*x
 under_3 = lambda x: x<3
