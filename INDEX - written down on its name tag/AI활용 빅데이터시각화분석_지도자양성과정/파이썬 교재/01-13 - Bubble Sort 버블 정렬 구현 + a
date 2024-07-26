@@ -1,0 +1,85 @@
+ # 과제 1
+# random 함수를 사용하여 1~100 사이에서 10개의 숫자를 구하고
+# select sort로 구현
+
+# 과제 2
+# random 함수를 사용하여 1~45 사이에서 6개의 숫자를 구하고
+# bubble sort로 구현
+
+'''
+요구사항
+1. 공식확인
+2. 함수화
+3. 대량의 데이터 처리해보기
+'''
+
+# pip install random
+# 버블 정렬은 리스트를 반복적으로 순회하면서 인접한 두 요소를 비교하여
+# 순서가 잘못된 경우 이를 교환하는 방식으로 정렬합니다. 
+
+import random
+
+# 1부터 100 사이의 무작위 숫자 10개 생성
+random_numbers = [random.randint(1, 100) for _ in range(10)]
+print("Random Numbers:", random_numbers)
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        # Flag to detect if any swap happens
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                # Swap if the element found is greater than the next element
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        # If no two elements were swapped by inner loop, then the array is sorted
+        if not swapped:
+            break
+    return arr
+
+# 버블 정렬을 사용하여 무작위 숫자 정렬
+sorted_numbers = bubble_sort(random_numbers)
+print("Sorted Numbers:", sorted_numbers)
+
+'''
+# RUN 결과 =====>
+Random Numbers: [3, 55, 61, 32, 25, 39, 31, 78, 17, 52]
+Sorted Numbers: [3, 17, 25, 31, 32, 39, 52, 55, 61, 78]
+'''
+
+
+
+
+
+# 사용자가 num_1과 num_2 값을 입력할 수 있도록 하여, 입력된 범위와 개수에 따라 무작위 숫자를 생성하고,
+# 이를 버블 정렬 알고리즘을 사용하여 정렬하는 코드
+
+import random
+
+# 사용자로부터 num_1과 num_2를 입력받기
+num_1 = int(input("Enter the upper limit (num_1): "))
+num_2 = int(input("Enter the number of random numbers to generate (num_2): "))
+
+# 1부터 num_1 사이의 무작위 숫자 num_2개 생성
+random_numbers = [random.randint(1, num_1) for _ in range(num_2)]
+print("Random Numbers:", random_numbers)
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        # Flag to detect if any swap happens
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                # Swap if the element found is greater than the next element
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        # If no two elements were swapped by inner loop, then the array is sorted
+        if not swapped:
+            break
+    return arr
+
+# 버블 정렬을 사용하여 무작위 숫자 정렬
+sorted_numbers = bubble_sort(random_numbers)
+print("Sorted Numbers:", sorted_numbers)
