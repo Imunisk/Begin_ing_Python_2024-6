@@ -1,0 +1,31 @@
+# 파일 열기
+file = open("basic.txt", "w")
+
+# 파일 쓰기
+file.write("Hello Python programming...!")
+
+# 파일 닫기
+file.close()
+
+
+# 파일 열기
+with open("basic.txt", "w") as file:
+    file.write("자동 파일 닫기 가능...!")
+
+
+'''
+주의) 덮어쓰기가 그냥 즉시실행된다.
+  덮어쓰시겠습니까? 물어보는 게없다.
+'''
+'''
+  유사한 개념  try ~ catch ~ finally
+  그래서 만약 자바라면 final 에 close를 두었을 것이다.
+'''
+
+
+
+# 파일 열기
+with open("basic.txt", "r") as file:
+    # 파일을 읽고 출력
+    contents = file.read()
+print(contents)
