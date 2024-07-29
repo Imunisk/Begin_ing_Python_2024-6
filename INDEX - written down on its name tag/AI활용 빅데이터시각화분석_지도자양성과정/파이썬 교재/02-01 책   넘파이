@@ -1,0 +1,68 @@
+# 넘파이 array 메서드 사용
+# 배열로 변경하기
+import numpy as np
+
+lst1 = [1,2,3,4,5]
+np1 = np.array(lst1)
+np1      # array([1,2,3,4,5])
+
+
+
+# 배열 안 숫자에 연산 적용하기 - 곱셈
+import numpy as np
+
+lst1 = [1,2,3,4,5]
+np1 = np.array(lst1)
+np1 * 2      # [2,4,6,8,10]
+
+# 배열 안 숫자에 연산 적용하기 - 덧셈
+import numpy as np
+
+lst1 = [1,2,3,4,5]
+lst2 = [5,4,3,2,1]
+np1 = np.array(lst1)
+np2 = np.array(lst2)
+np1 + np2      # [6,6,6,6,6] 
+
+
+
+# 그렇다면, numpy 안 쓰는 경우에는?
+lst1 = [1,2,3,4,5]
+
+lst_n = []
+for i in lst1:
+    lst_n.append(i*2)
+lst_n      # [2,4,6,8,10]
+
+
+
+# 넘파이는 n차원의 배열을 만든다.
+# 따라서 행렬 얼마인지 체크해보는 메서드도 있다.
+# 넘파이 속성 체크해보는 메서드
+
+print(n.dim)          # n 객체의 차원
+print(n.shape)        # n 객체의 배열모양 (=행.열.)
+print(n.size)         # n 객체의 원소 개수 
+print(n.itemsize)     # n 객체 원소들의 메모리 크기 
+print(n.dtype)        # n 객체 원소들의 자료형 
+
+
+e.g_1)
+n= np.array([1,2,3,4,5])
+print(n.ndim)          # 1
+print(n.shape)         # (5,)   (행이 5개)
+print(n.size)          # 5
+print(n.itemsize)      # 4
+print(n.dtype)         # int32
+
+e.g_2)
+np.t1= np.array([[1,2,3],[4,5,6]])
+print(np_t1.ndim)      # 2
+print(np_t1.shape)     # (2,3)   (행이 2개,열이 3개)
+print(np_t1.size)      # 6
+print(np_t1.itemsize)  # 4
+print(np_t1.dtype)     # int32
+
+
+
+
