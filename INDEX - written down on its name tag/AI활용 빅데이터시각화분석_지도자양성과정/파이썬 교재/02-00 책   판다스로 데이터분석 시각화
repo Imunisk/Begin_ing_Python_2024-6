@@ -1,0 +1,55 @@
+'''
+[  다룰 모듈 : 넘파이,판다스,매트플롯,씨브론  ]
+
+
+
+A 마크다운
+줄바꿈  : 엔터 아님. 스페이스 2개 씀.
+샵 띄우기 : 크기 조정  1~6
+
+HTML)  <h1>    </h1>    1~6
+  <span style="color:red">색상적용</span>
+  <span style='font-weight:bold'>웨이트(진하게)</
+  <span style='font-style,Italic'>스타일</
+  <span style='font-size:20px'>글자크기</
+  <span style='line-height:50px''>줄간격</
+
+  <span style='color:blue;
+               font-size:20px'>
+
+
+
+B
+확장자   :  ipynb
+파일 저장 : 컨트롤 S
+
+
+
+
+C 셀 단축키
+  셀에 인풋을 입력 ===> 셀 아래에 아웃풋 나옴.
+
+1. 셀 줄바꿈,셀 만들기
+  컨트롤 엔터  줄 안바꿈. 셀만 실행
+  알트 엔터   줄 바꿈. 새 셀 만들고 거기로 이동.
+  시프트 엔터  줄 바꿈. 다음 셀로 이동.
+  A  above
+  B  below
+  dd 딜리트
+
+2. 모드
+ M 마크다운 모드
+ Y 코드 모드
+ 엔터 에디트 나감
+ Esc 에디트 모드
+
+3. 코드
+  컨트롤 z  이전으로 되돌리기
+  컨트롤 y  반대
+  컨트롤 d  지금 줄 그것만 딜리트
+
+  컨트롤 a  전체 선택
+  컨트롤 /  주석 처리
+
+
+'''
