@@ -1,0 +1,21 @@
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+var = ['a', 'a,', 'b', 'c']
+var
+
+# 경고문 무시
+import warnings
+warnings.filterwarnings("ignore")    # 줄글로 된 경고문 안뜹니다.
+
+# 컬러 지정
+palette_colors = ['#007FFF', 'orange', 'orange']
+# Counterplot 그리기
+sns.countplot(x=var, palette= palette_colors)
+
+# 그래프 표시
+plt.show()
+
