@@ -1,0 +1,16 @@
+import pandas as pd
+
+df = pd.DataFrame({ 'name' : ['김민욱', '김지훈', '김선영', '김민지'],
+                   'english' : [90, 80, 60, 70],
+                   'math' : [50, 60, 100 ,20]})
+df
+
+# english 값만 추출
+df['english']
+# english 합계
+sum(df['english'])
+
+# english 평균
+# sum(df['english']) /4
+average_english = df['english'].mean()
+print("영어 평균값: ", average_english)
