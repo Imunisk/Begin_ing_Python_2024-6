@@ -1,0 +1,23 @@
+
+# 타이타닉 생존자 수 데이터 분석
+df = sns.load_dataset('titanic')
+df
+
+#  챗GPT survived    pclass  sex age sibsp   parch   fare    embarked    class   who adult_male  deck    embark_town alive   alone
+#  타이타닉 데이터의 필드명인데 설명해줘.
+
+# sns.counterplot() 메뉴얼 출력
+
+# sns.countplot?
+
+
+
+sns.countplot(data=df, x='sex')
+plt.show()
+
+sns.countplot(data=df, x='class', hue= 'alive')
+plt.show()
+
+- y축으로 두기
+sns.countplot(data=df, y='class', hue= 'alive')
+plt.show()
