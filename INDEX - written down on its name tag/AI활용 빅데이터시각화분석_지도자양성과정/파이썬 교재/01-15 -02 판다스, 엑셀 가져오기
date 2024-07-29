@@ -1,0 +1,22 @@
+import pandas as pd
+! pip install openpyxl
+
+df_exam = pd.read_excel('D:\kun_data\data/excel_example.xlsx')   # 주소와 파일이름 그리고 확장자
+df_exam
+#   표가 행렬로 출력된다
+#   디폴트로, 맨위 행은 제목 (필드명)으로 인식합니다.
+
+
+# english 평균
+sum(df_exam['english']) /12
+
+# 변수의 갯수 구하기
+x = [1,2,3,4,5]
+len(x)
+
+
+len(df_exam)  # 12으로 나온다. 행의 갯수를 센다.
+df_exam['english'].count()
+# len()        -> 이거는 독립적 함수
+# 모모.count() -> 메서드
+
