@@ -1,0 +1,11 @@
+# 네이버 환율수집
+
+import requests
+from bs4 import BeautifulSoup
+code = requests.get("https://finance.  ++")
+
+soup = BeautifulSoup(code.text, 'html.parser')
+price = soup.select("ul#exchangeList span.value")
+#print(price)
+dor i in price:
+    print(i.text)
