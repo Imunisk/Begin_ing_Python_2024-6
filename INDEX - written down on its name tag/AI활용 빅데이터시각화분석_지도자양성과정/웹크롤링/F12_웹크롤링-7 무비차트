@@ -1,0 +1,19 @@
+import requests
+from bs4 import BeautifulSoup
+
+# 서버로부터 HTML 코드 받아오기
+code = requests.get("https://www/cgv/  ++")
+#print(code.text)
+
+# 파싱
+soup = BeautifulSoup(code.text, "html.parser")
+#print(soup)
+
+# 제목 불러오기
+title = soup.select_one("strong.title")
+#print(title.text)    # 태그는 필요없으니 text만 가져옴
+
+# 여러 요소 한번에 모두 불러오기
+title = soup.select("strong.title")
+for i in title:
+    print(i.text)
