@@ -1,0 +1,10 @@
+
+
+#
+code = requests.get(f"https://underkg.co.kr/news")
+soup = BeautifulSoup(code.text, "html.parser")
+title = soup.select("h1.title > a")
+for i in title:
+    print(f"제목 : {i.text}")
+    news_url = i.attrs["href"]
+    print(f"링크 : {news_url}")
