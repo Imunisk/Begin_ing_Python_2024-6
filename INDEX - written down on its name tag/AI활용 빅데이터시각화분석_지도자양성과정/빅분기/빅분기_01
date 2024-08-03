@@ -31,3 +31,31 @@ print(sr1[[0,1]])  #인덱스  인덱스의값   [0,1]=[0:2]
 # 2차원 데이터와 인덱스,컬럼으로 구성된다 
 # p.50
 df1 = pd.DataFrame([[10,20,30],[40,50,60]])
+
+
+
+# 예제. 딕셔너리로 df 생성. 인덱스와컬럼 명 변경.
+
+import pandas as pd
+
+# 예시 데이터 프레임 생성
+
+df = pd.DataFrame({
+    'A': [1, 2, 3, 4, 5],
+    'B': [10, 20, 30, 40, 50]
+})
+
+print(df)
+   A   B
+0  1  10
+1  2  20
+2  3  30
+3  4  40
+4  5  50
+
+df.rename(columns = {'A' : ‘갯수’, 'B' : '가격'}, inplace = True)
+df.rename(index = {0:'사과, 1:'감', 2:'귤', 3:'배',
+4:'포도'}, inplace = True)
+
+또는 df = pd.DataFrame({'A' []....''[]},  \
+index = ['a','b','c','d','e'])
