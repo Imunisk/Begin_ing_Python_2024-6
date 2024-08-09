@@ -1,0 +1,37 @@
+import pandas as pd
+import numpy as np
+df = pd.DataFrame(['13.42%', '-0.01%'], ['11.56%', '-1.57%']], .....index = ['Python', 'C', 'C++', 'Java'],\
+columns = ['Ratings', 'Change'])
+
+# p96  Q1 - 행/열 이름 바꾸기
+df.rename(index = {'Python':'py', 'C': 'C-lang'})
+df.rename(columns = {'Ratings' :'RATINGS'})
+df
+# 다른 방법
+df.index = ['C언어','자바','파이썬','알']
+print(df.index)
+print(df.columns)
+
+# df 만들기 -2번째 방법
+name = ['John', 'Tom', 'Jamie', 'Donald']
+kor = [70, 100,80]
+eng = [100,50,80]
+math = [60,40,10]
+df_score = pd.DateFrame({'이름': name, '국어':kor ￦
+'영어':eng, '수학':math})
+df_score
+
+df_score.index = ['0번','1번','2번,'3번']
+df_score
+
+
+
+
+
+
+
+
+
+
+
+
