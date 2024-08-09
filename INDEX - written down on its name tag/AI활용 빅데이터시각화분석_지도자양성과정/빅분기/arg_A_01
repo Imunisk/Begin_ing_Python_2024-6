@@ -1,0 +1,177 @@
+# 기흥역 빅데이터 수업 중
+# 데이터 분석 Pandas 교재 수업 시작함.
+# arg_A_01
+
+# 아나콘다의 주피터 노트북은 마크다운 기능이 있다
+# Markdown & HTML law
+
+# Header 1
+###### Header 6
+<h1> Header 1 </h1>
+<span style = 'line-height : 50px;
+font-size: 20px, font-weight : bold'> 글 </span>
+
+# 데이터 과학이란 데이터를 연구하여 데이터 엔지니어, 분석 등의 직무를
+# 수행한다. 데이터를 가공하고 수치적인 통계 데이커를 확인하고, 탐색적 데이터 분석을 통해 시각화 하게 된다.
+# 넘파이는 계산 관련
+# 판다스는 데이터 프레임과 시리즈. 빅데이터 다룬다.
+# tensorflow 는 빅데이터 , 머신러인 둘다 걸침
+# Matplotlib 는 시각화.
+# Seaborn 은 시각화. plt보다 더 디자인적인 디테일이 특화되어있다.
+
+# 넘파이
+lst1 = [1,2,3,4,5]
+import numpy as np
+ar1 = np.array(lst)
+# 배열 만드는 법 3가지
+# 1 
+import numpy as np
+lst = [1,2,3,4,5]
+np1 = np.array[lst]
+# 2
+import numpy as np
+np2 = np.array([1,2,3,4,5])
+# 3
+import numpy as np
+np3 = np.arange(1,6,1)
+
+
+# 1 한번더
+import numpy as np
+lst = [1,2,3,4,5]
+np1 = np.array(lst)
+# 2
+import numpy as np
+np2 = np.array([1,2,3,4,5])
+# 3
+np3 = np.arange(1,6,1)
+
+# n_dimension
+# 1-D
+np_d1 = np.array([1,2,3])
+# 2-D
+np_d2 = np.array([[1,2,3],[4,5,6]])
+
+
+# e.g_)
+# 10 percent discount
+import unmpy as np
+item_price = [1000,2000,2500,3000]
+np_price = np.array(item_price)
+np_new_price = np_price * 1.1
+# e.g_)
+# average for mid term and final exam
+import numpy as np
+mid = np.array([70,90.80,100])
+final = np.array([90.60,70,90])
+avg = (mid_final)/2
+
+
+# 넘파이 속성
+np_test = np.array([1,2,3],[4,5,6])
+print(np_test.ndim)
+print(np_test.shape)   # 튜플 (2,1)
+print(np_test.size)   # 6
+
+# 넘파이 함수들
+# numpy.arange()
+np_arange(0,5).reshape(2,2)
+
+# 
+# np.sum()  np.mean()  np.max()
+# np.std()  np.var()  np.argmin()
+# 함수(x)에서 y가 최소가 되는 x인자
+
+# e.g_)
+# list_oct는 10월 온도의 데이터셋 이 들어있다
+np_oct = np.array(list_oct)
+
+# np) np1.mean()  np.median(np1)
+# 편차 Deviation는 평균에서 떨어진 값들의 합
+# 분산 Variance은 평균 떨어진 값들을 제곱의 합
+# 표준편차 STD는 분산에 데곱근을 씌움
+
+# 논리적 인덱싱
+np_oct = np.array(list_oct)
+days = np_oct >= np_oct.mean()
+print(days.sum())
+np_oct[days]
+
+# concatenate split
+# transpose
+
+# n2.T ==== np.transpose(n2)
+
+n1 = np.array([[1,2,3],[4,5,6]])
+n2 = np.array([[10,20],[30,40]])
+n2_1 = np.transpose(n2)
+print(n2_1)
+print(n2.T) 
+# 위 두개릐 출력값은 동일하다
+print(np.concatenate([n1,n2_1], axis =0)
+
+# 분리
+import numpy as np
+n_d = np.array([[1,2,3],[4,5,6],[7,8,9]])
+n_d[1:,1:].T    #2,3행,  2,3열 분리, 그리고 전치
+
+# indice 기법
+np_array = np.arange(1,17).reshape(4,-1)
+print(np_array)
+a,b = np.split(np_array, [2], axis = 0)
+print(a)
+print(b)
+
+# 몇 파트일지. 괄호없이 숫자만.
+# 4X3 의 a 행렬
+
+# a, 2, axis = 0   아래의 두 개로 분리
+#1  ㅁㅁㅁ
+#   ㅁㅁㅁ
+
+#2  ㅁㅁㅁ
+#   ㅁㅁㅁ
+
+
+
+import pandas as pd
+snack_price = [1.2, 1.5, 2.3, 0.9 , 8999]
+snack_name = ['A', 'B', 'C', D', 'E']
+s_snack = pd.DataFrame(snack_price, index = snack_name,
+          name = '과자')
+
+# E 과자의 value 고치지
+s_snack.loc['E'] = 2.5
+s_snack
+
+# 여러 과자 value 고치기
+s_snack.loc[['A','B','C']] = [1.2, 0.9, 1.1]
+s_snack.loc['D': 'E'] = [1.2, 0.9]
+s_snack
+
+# ====주의===  pandas는 시리즈든 데이터프레임이든
+#             한번 쓰면 새 데이터가 생성되어버린다. 오타이더라도.
+# 아래와 같이...
+s_snack.loc['F'] = 'Errrorrrrrr'
+
+
+# Q1
+# 1-45사이의 난수 6개를 value로 갖고, 인덱스는 1-6.
+# 그리고 dType은 int8이 되도록
+
+import pandas as pd
+import numpt as np
+s_4 = pd.DataFrame(np.random.randint(1,45+1, 6),\
+       index = np.arange(1,7), dtype = 'int8')
+print(s_4)
+print(s_4.index)
+print(s_4.values)
+
+
+
+
+
+
+
+
+
